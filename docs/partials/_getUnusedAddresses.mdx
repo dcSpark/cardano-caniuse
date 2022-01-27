@@ -1,0 +1,10 @@
+import CaniuseTable from '@site/src/components/CaniuseTable';
+import { Api } from '@site/src/system/Types';
+
+## `api.getUnusedAddresses(): Promise<cbor<address>[]>`
+
+Errors: `APIError`
+
+Returns a list of unused addresses controlled by the wallet.
+
+<CaniuseTable api={Api.GetUnusedAddresses}/>

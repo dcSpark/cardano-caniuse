@@ -1,0 +1,10 @@
+import CaniuseTable from '@site/src/components/CaniuseTable';
+import { Api } from '@site/src/system/Types';
+
+## `cardano.{walletName}.enable(): Promise<API>`
+
+Errors: `APIError`
+
+This is the entrypoint to start communication with the user's wallet. The wallet should request the user's permission to connect the web page to the user's wallet, and if permission has been granted, the full API will be returned to the dApp to use. The wallet can choose to maintain a whitelist to not necessarily ask the user's permission every time access is requested, but this behavior is up to the wallet and should be transparent to web pages using this API. If a wallet is already connected this function should not request access a second time, and instead just return the `API` object.
+
+<CaniuseTable api={Api.Enable}/>

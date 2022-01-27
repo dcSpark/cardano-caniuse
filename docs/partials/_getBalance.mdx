@@ -1,0 +1,10 @@
+import CaniuseTable from '@site/src/components/CaniuseTable';
+import { Api } from '@site/src/system/Types';
+
+## `api.getBalance(): Promise<cbor<value>>`
+
+Errors: `APIError`
+
+Returns the total balance available of the wallet. This is the same as summing the results of `api.getUtxos()`, but it is both useful to dApps and likely already maintained by the implementing wallet in a more efficient manner so it has been included in the API as well.
+
+<CaniuseTable api={Api.GetBalance}/>

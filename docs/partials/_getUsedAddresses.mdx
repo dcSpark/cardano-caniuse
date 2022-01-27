@@ -1,0 +1,10 @@
+import CaniuseTable from '@site/src/components/CaniuseTable';
+import { Api } from '@site/src/system/Types';
+
+## `api.getUsedAddresses(paginate: Paginate = undefined): Promise<cbor<address>[]>`
+
+Errors: `APIError`
+
+Returns a list of all used (included in some on-chain transaction) addresses controlled by the wallet. The results can be further paginated by `paginate` if it is not `undefined`.
+
+<CaniuseTable api={Api.GetUsedAddresses}/>

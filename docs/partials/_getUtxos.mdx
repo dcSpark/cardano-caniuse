@@ -1,0 +1,10 @@
+import CaniuseTable from '@site/src/components/CaniuseTable';
+import { Api } from '@site/src/system/Types';
+
+## `api.getUtxos(amount: cbor<value> = undefined, paginate: Paginate = undefined): Promise<TransactionUnspentOutput[] | undefined>`
+
+Errors: `APIError`, `PaginateError`
+
+If `amount` is `undefined`, this shall return a list of all UTXOs (unspent transaction outputs) controlled by the wallet. If `amount` is not `undefined`, this request shall be limited to just the UTXOs that are required to reach the combined ADA/multiasset value target specified in `amount`, and if this cannot be attained, `undefined` shall be returned. The results can be further paginated by `paginate` if it is not `undefined`.
+
+<CaniuseTable api={Api.GetUtxos}/>

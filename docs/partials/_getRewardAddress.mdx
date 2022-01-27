@@ -1,0 +1,10 @@
+import CaniuseTable from '@site/src/components/CaniuseTable';
+import { Api } from '@site/src/system/Types';
+
+## `api.getRewardAddresses(): Promise<cbor<address>[]>`
+
+Errors: `APIError`
+
+Returns the reward addresses owned by the wallet. This can return multiple addresses e.g. CIP-0018.
+
+<CaniuseTable api={Api.GetRewardAddress}/>
