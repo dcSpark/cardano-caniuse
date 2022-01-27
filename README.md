@@ -80,7 +80,7 @@ docs/partials
 └── _submitTx.mdx
 ```
 
-Add a new API definition like so:
+Add a new API definition like so `_newApi.mdx`:
 
 ```md
 import CaniuseTable from '@site/src/components/CaniuseTable';
