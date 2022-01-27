@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'dcSpark', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'cardano-caniuse', // Usually your repo name.
   plugins: [],
   presets: [
     [
@@ -24,13 +24,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/dcSpark/cardano-caniuse',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/dcSpark/cardano-caniuse',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -44,7 +44,20 @@ const config = {
     ({
       navbar: {
         title: 'CARDANO | CANIUSE',
-        items: [],
+        items: [
+          {
+            href: 'https://github.com/dcSpark/cardano-caniuse',
+            position: 'right',
+            className: 'header-github-link',
+            label: 'Cardano dApp-Wallet Web Bridge (CIP30)'
+          },
+          {
+            href: 'https://github.com/dcSpark/cardano-caniuse',
+            position: 'right',
+            className: 'header-github-link',
+            label: 'Edit on GitHub'
+          }
+        ],
       },
       footer: {
         style: 'light',

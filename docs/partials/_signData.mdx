@@ -1,7 +1,7 @@
 import CaniuseTable from '@site/src/components/CaniuseTable';
 import { Api } from '@site/src/system/Types';
 
-## `api.signData(addr: cbor<address>, sigStructure: cbor<Sig_structure>): Promise<Bytes>`
+## `api.signData: (addr: Cbor<address>, payload: HexString) => Promise<Cbor<CoseSign1>>`
 
 Errors: `APIError`, `DataSignError`
 
