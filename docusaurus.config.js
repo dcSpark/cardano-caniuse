@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'CARDANO | CANIUSE',
   tagline: 'Cardano Wallet API Compatiblity Matrix ⚡️',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://dcspark.github.io/cardano-caniuse',
+  baseUrl: '/cardano-caniuse/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
