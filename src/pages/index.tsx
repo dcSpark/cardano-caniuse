@@ -29,7 +29,7 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout
-      title={siteConfig.title}
+      title=''
       description="Up-to-date wallet support tables for cip30 (dApp connector) support">
       <Head>
         <link
