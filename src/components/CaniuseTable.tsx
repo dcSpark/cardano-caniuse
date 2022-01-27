@@ -1,11 +1,13 @@
 import React from 'react';
-import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
+import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, useMediaQuery } from '@mui/material';
 import { SupportedCell, NotSupportedCell, PartialSupportedCell, UnknownCell } from '@site/src/components/TableCells';
 import { Api, SupportLevel } from '@site/src/system/Types';
 import { getCompatbility } from '../system/Matrix';
 
 function TablePaper(props): JSX.Element {
-  return <Paper elevation={6}>{props.children}</Paper>;
+  const isMobile = useMediaQuery('(max-width: 680px)', { noSsr: true });
+  const style = isMobile ? { float: 'left' } : {};
+  return <Paper elevation={6} sx={style}>{props.children}</Paper>;
 }
 
 export default function CaniuseTable(props: {
