@@ -51,7 +51,7 @@ export enum Api {
   GetRewardAddress,
   SignTx,
   SignData,
-  SubmitTx
+  SubmitTx,
   // Add your new api here
   NewAPI
 }
