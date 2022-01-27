@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={siteConfig.title}
-      description="Description will go into a meta tag in <head />">
+      description="Up-to-date wallet support tables for cip30 (dApp connector) support">
       <Head>
         <link
           rel="stylesheet"
