@@ -30,6 +30,25 @@ export default {
 }
 ```
 
+Add the new definition to `src/Wallets.ts`:
+
+```ts
+import Flint from "./wallets/Flint";
+import Gero from "./wallets/Gero";
+import Nami from "./wallets/Nami";
+import Cv from "./wallets/Cv";
+// import your wallet definition
+import CardanoWallet from "./wallets/CardanoWallet";
+
+export const Wallets = [
+  Flint,
+  Nami, 
+  Cv, 
+  // Add your wallet definition
+  CardanoWallet
+];
+```
+
 # Adding a new API
 
 ## Adding API Type
