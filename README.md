@@ -1,4 +1,4 @@
-![CARDANOCANIUSE](https://github.com/dcSpark/cardano-caniuse/blob/main/static/img/caniuse.png?raw=true)
+![CARDANOCANIUSE](https://github.com/dcSpark/cardano-caniuse/blob/main/static/img/caniuse_new.png?raw=true)
 
 # Adding a new wallet
 
