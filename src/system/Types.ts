@@ -11,9 +11,12 @@ export enum Api {
   GetUnusedAddresses,
   GetChangeAddress,
   GetRewardAddress,
+  GetCollateral,
   SignTx,
   SignData,
-  SubmitTx
+  SubmitTx,
+  OnAccountChange,
+  OnNetworkChange
 }
 
 export enum SupportLevel {

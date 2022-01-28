@@ -13,9 +13,12 @@ import GetBalance from '@site/docs/partials/_getBalance.mdx';
 import GetUnusedAddresses from '@site/docs/partials/_getUnusedAddresses.mdx';
 import GetChangeAddress from '@site/docs/partials/_getChangeAddress.mdx';
 import GetRewardAddress from '@site/docs/partials/_getRewardAddress.mdx';
+import GetCollateral from '@site/docs/partials/_getCollateral.mdx';
 import SignTx from '@site/docs/partials/_signTx.mdx';
 import SignData from '@site/docs/partials/_signData.mdx';
 import SubmitTx from '@site/docs/partials/_submitTx.mdx';
+import onAccountChange from '@site/docs/partials/_onAccountChange.mdx';
+import onNetworkChange from '@site/docs/partials/_onNetworkChange.mdx';
 
 const docs = [
   Enable,
@@ -30,9 +33,12 @@ const docs = [
   GetUnusedAddresses,
   GetChangeAddress,
   GetRewardAddress,
+  GetCollateral,
   SignTx,
   SignData,
-  SubmitTx
+  SubmitTx,
+  onAccountChange,
+  onNetworkChange
 ]
 
 export default function Matrix(): JSX.Element {

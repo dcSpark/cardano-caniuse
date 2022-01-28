@@ -46,7 +46,7 @@ const config = {
         title: 'CARDANO | CANIUSE',
         items: [
           {
-            href: 'https://github.com/dcSpark/cardano-caniuse',
+            href: 'https://github.com/cardano-foundation/CIPs/tree/master/CIP-0030',
             position: 'right',
             className: 'header-github-link',
             label: 'Cardano dApp-Wallet Web Bridge (CIP30)'

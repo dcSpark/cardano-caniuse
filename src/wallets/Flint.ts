@@ -18,6 +18,9 @@ export default {
     [Api.GetRewardAddress]: SupportLevel.Supported,
     [Api.SignTx]: SupportLevel.Supported,
     [Api.SignData]: SupportLevel.Supported,
-    [Api.SubmitTx]: SupportLevel.Supported
+    [Api.SubmitTx]: SupportLevel.Supported,
+    [Api.GetCollateral]: SupportLevel.Supported,
+    [Api.OnAccountChange]: SupportLevel.Supported,
+    [Api.OnNetworkChange]: SupportLevel.Supported
   }
 }

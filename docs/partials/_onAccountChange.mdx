@@ -1,0 +1,10 @@
+import CaniuseTable from '@site/src/components/CaniuseTable';
+import { Api } from '@site/src/system/Types';
+
+## `api.onAccountChange`
+
+Errors: `Unknown`
+
+Emitted when the user changes accounts (i.e. different root key pair and/or network id). The same `api` object will continue to work but will now return results based on the new account. After this event is received dApps should check `api.getNetworkId()` as changing accounts can also change the network.
+
+<CaniuseTable api={Api.OnAccountChange}/>
