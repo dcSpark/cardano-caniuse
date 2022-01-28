@@ -36,9 +36,7 @@ const docs = [
   GetCollateral,
   SignTx,
   SignData,
-  SubmitTx,
-  onAccountChange,
-  onNetworkChange
+  SubmitTx
 ]
 
 export default function Matrix(): JSX.Element {
