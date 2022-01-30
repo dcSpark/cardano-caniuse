@@ -20,7 +20,7 @@ export default {
     [Api.SignData]: SupportLevel.Supported,
     [Api.SubmitTx]: SupportLevel.Supported,
     [Api.GetCollateral]: SupportLevel.Experimental,
-    [Api.OnAccountChange]: SupportLevel.Unsupported,
-    [Api.OnNetworkChange]: SupportLevel.Unsupported
+    [Api.On]: SupportLevel.Experimental,
+    [Api.Off]: SupportLevel.Experimental
   }
 }

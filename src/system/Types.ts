@@ -16,7 +16,9 @@ export enum Api {
   SignData,
   SubmitTx,
   OnAccountChange,
-  OnNetworkChange
+  OnNetworkChange,
+  On,
+  Off
 }
 
 export enum SupportLevel {

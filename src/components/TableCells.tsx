@@ -1,4 +1,9 @@
-import { styled, TableCell } from "@mui/material";
+import React from "react";
+import { Chip, styled, TableCell } from "@mui/material";
+import ScienceIcon from '@mui/icons-material/Science';
+import { useTheme } from "@mui/system";
+import { red } from '@mui/material/colors';
+const color = red[500];
 
 export const SupportedCell = styled(TableCell)(prop => ({
   backgroundColor: prop.theme.palette.success.main,
@@ -27,3 +32,13 @@ export const UnknownCell = styled(TableCell)(prop => ({
   textAlign: "center",
   fontWeight: "bold"
 }));
+
+const StyledChip = styled(Chip)(prop => ({
+  backgroundColor: prop.theme.palette.grey[600],
+  color:  prop.theme.palette.getContrastText(prop.theme.palette.grey[600])
+}));
+
+export const ExperimentalChip = () => {
+  const theme = useTheme();
+  return <StyledChip sx={{marginBottom: '16px'}} label="NON-STANDARD" avatar={<ScienceIcon/>} />
+}

@@ -4,7 +4,10 @@ import { createTheme, PaletteMode, ThemeProvider } from '@mui/material';
 
 export default function LayoutTheme(props): JSX.Element {
   // Docusaurus Theme
-  const { isDarkTheme } = useColorMode();
+  let { isDarkTheme } = useColorMode();
+  // Hack to work in production???
+  isDarkTheme = localStorage.getItem('theme') !== null ?
+    localStorage.getItem('theme') === 'dark' : isDarkTheme;
 
   // Material UI Theme
   const theme = React.useMemo(() => createTheme({
