@@ -1,5 +1,6 @@
 import React from 'react';
 import { Paper } from '@mui/material';
+import InjectionName from '@site/docs/partials/_injectionName.mdx';
 /* list of APIs */
 import GetUsedAddresses from '@site/docs/partials/_getUsedAddresses.mdx';
 import GetUsedUtxos from '@site/docs/partials/_getUtxos.mdx';
@@ -43,15 +44,30 @@ const docs = [
   Off
 ]
 
+function SectionPaper(props: {
+  children: React.ReactNode
+}): JSX.Element {
+  return (
+    <Paper elevation={3} sx={{
+      margin: "16px 0px",
+      padding: "16px",
+    }}>
+      {props.children}
+    </Paper>
+  )
+}
+
 export default function Matrix(): JSX.Element {
   return <>
+    <SectionPaper>
+      <InjectionName />
+    </SectionPaper>
     {docs.map((Doc, i) => {
-       return <Paper elevation={3} key={i} sx={{
-        margin: "16px 0px",
-        padding: "16px",
-      }}>
-        <Doc />
-      </Paper>
+       return (
+        <SectionPaper key={i}>
+          <Doc />
+        </SectionPaper>
+      )
     })}
   </>
 }
