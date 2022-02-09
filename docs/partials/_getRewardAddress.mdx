@@ -1,10 +1,16 @@
 import CaniuseTable from '@site/src/components/CaniuseTable';
 import { Api } from '@site/src/system/Types';
+import { ExperimentalChip } from '@site/src/components/TableCells';
+import { DeprecatedChip } from '@site/src/components/TableCells';
 
-## `api.getRewardAddresses(): Promise<cbor<address>[]>`
+<DeprecatedChip /> <ExperimentalChip />
+
+## `api.getRewardAddress(): Promise<cbor<address>>`
 
 Errors: `APIError`
 
-Returns the reward addresses owned by the wallet. This can return multiple addresses e.g. CIP-0018.
+Returns the reward address owned by the wallet. This only returns a single address
+
+Deprecated. See `getRewardAddresses`
 
 <CaniuseTable api={Api.GetRewardAddress}/>

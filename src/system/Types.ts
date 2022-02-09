@@ -11,6 +11,7 @@ export enum Api {
   GetUnusedAddresses,
   GetChangeAddress,
   GetRewardAddress,
+  GetRewardAddresses,
   GetCollateral,
   SignTx,
   SignData,
@@ -24,7 +25,8 @@ export enum Api {
 export enum SupportLevel {
   Supported,
   Unsupported,
-  Experimental
+  Experimental,
+  Deprecated
 }
 
 export type Wallet = {
