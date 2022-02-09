@@ -16,7 +16,7 @@ export default {
     [Api.GetUsedAddresses]: SupportLevel.Supported,
     [Api.GetUnusedAddresses]: SupportLevel.Supported,
     [Api.GetChangeAddress]: SupportLevel.Supported,
-    [Api.GetRewardAddress]: SupportLevel.Supported,
+    [Api.GetRewardAddresses]: SupportLevel.Supported,
     [Api.SignTx]: SupportLevel.Supported,
     [Api.SignData]: SupportLevel.Supported,
     [Api.SubmitTx]: SupportLevel.Supported,

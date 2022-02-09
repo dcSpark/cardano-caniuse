@@ -14,6 +14,7 @@ import GetBalance from '@site/docs/partials/_getBalance.mdx';
 import GetUnusedAddresses from '@site/docs/partials/_getUnusedAddresses.mdx';
 import GetChangeAddress from '@site/docs/partials/_getChangeAddress.mdx';
 import GetRewardAddress from '@site/docs/partials/_getRewardAddress.mdx';
+import GetRewardAddresses from '@site/docs/partials/_getRewardAddresses.mdx';
 import GetCollateral from '@site/docs/partials/_getCollateral.mdx';
 import SignTx from '@site/docs/partials/_signTx.mdx';
 import SignData from '@site/docs/partials/_signData.mdx';
@@ -36,6 +37,7 @@ const docs = [
   GetUnusedAddresses,
   GetChangeAddress,
   GetRewardAddress,
+  GetRewardAddresses,
   GetCollateral,
   SignTx,
   SignData,

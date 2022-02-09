@@ -68,6 +68,7 @@ export enum Api {
   GetUnusedAddresses,
   GetChangeAddress,
   GetRewardAddress,
+  GetRewardAddresses,
   SignTx,
   SignData,
   SubmitTx,
