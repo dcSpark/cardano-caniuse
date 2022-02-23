@@ -7,5 +7,5 @@ export const Wallets = [
   Flint,
   Nami, 
   Cv, 
-  // Gero
+  Gero,
 ];
