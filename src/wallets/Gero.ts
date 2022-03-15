@@ -17,14 +17,14 @@ export default {
     [Api.GetUnusedAddresses]: SupportLevel.Supported,
     [Api.GetChangeAddress]: SupportLevel.Supported,
     [Api.GetRewardAddress]: SupportLevel.Supported,
-    [Api.GetRewardAddresses]: SupportLevel.Unsupported,
+    [Api.GetRewardAddresses]: SupportLevel.Supported,
     [Api.SignTx]: SupportLevel.Supported,
     [Api.SignData]: SupportLevel.Supported,
     [Api.SubmitTx]: SupportLevel.Supported,
     [Api.GetCollateral]: SupportLevel.Experimental,
-    [Api.On]: SupportLevel.Unsupported,
-    [Api.Off]: SupportLevel.Unsupported,
-    [Api.OnAccountChange]: SupportLevel.Unsupported,
+    [Api.On]: SupportLevel.Experimental,
+    [Api.Off]: SupportLevel.Experimental,
+    [Api.OnAccountChange]: SupportLevel.Supported,
     [Api.OnNetworkChange]: SupportLevel.Unsupported
   }
 }
