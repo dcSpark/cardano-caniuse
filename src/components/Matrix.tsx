@@ -23,6 +23,7 @@ import SubmitTx from '@site/docs/partials/_submitTx.mdx';
 // import onNetworkChange from '@site/docs/partials/_onNetworkChange.mdx';
 import On from '@site/docs/partials/_on.mdx';
 import Off from '@site/docs/partials/_off.mdx';
+import GetLockedUtxos from '@site/docs/partials/_getLockedUtxos.mdx';
 
 const docs = [
   Enable,
@@ -43,7 +44,8 @@ const docs = [
   SignData,
   SubmitTx,
   On,
-  Off
+  Off,
+  GetLockedUtxos
 ]
 
 function SectionPaper(props: {
