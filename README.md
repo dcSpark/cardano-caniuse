@@ -1,5 +1,7 @@
 ![CARDANOCANIUSE](https://github.com/dcSpark/cardano-caniuse/blob/main/static/img/caniuse_new.png?raw=true)
 
+# Access the website [here](https://www.cardano-caniuse.io)
+
 # Adding a new wallet
 
 Go to the directory `src/wallets/` you should see something like this: 
