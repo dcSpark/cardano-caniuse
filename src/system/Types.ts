@@ -19,7 +19,8 @@ export enum Api {
   OnAccountChange,
   OnNetworkChange,
   On,
-  Off
+  Off,
+  GetLockedUtxos
 }
 
 export enum SupportLevel {

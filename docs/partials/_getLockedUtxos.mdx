@@ -1,0 +1,21 @@
+import CaniuseTable from '@site/src/components/CaniuseTable';
+import { Api } from '@site/src/system/Types';
+import { ExperimentalChip } from '@site/src/components/TableCells';
+
+<ExperimentalChip />
+
+## `api.experimental.getLockedUtxos(): Promise<TransactionUnspentOutput[]>`
+
+Errors: `APIError`
+
+Returns an array of all currently locked UTxOs.
+
+A locked UTxO is either pending in an already submitted transaction or was locked manually by a wallet user to prevent
+the spending of the UTxO, eg. if a user wants to keep an ADA Handle on a certain address.
+
+We might want to split that in the future into getLockedUtxos() and getPendingUtxos().
+
+The reason for function: dApps need to be aware of UTxOs, that are currently present on-chain, but were already spent, to
+be able to update their UI and transaction building accordingly.
+
+<CaniuseTable api={Api.GetLockedUtxos}/>
