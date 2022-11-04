@@ -1,12 +1,17 @@
 import CaniuseTable from '@site/src/components/CaniuseTable';
 import { Api } from '@site/src/system/Types';
 
-## `api.signData: (addr: Cbor<address>, payload: HexString) => Promise<Cbor<CoseSign1>>`
+## `api.signData: (addr: Cbor<address> | bech32, payload: HexString) => Promise<DataSignature>`
 
 Errors: `APIError`, `DataSignError`
 
-This endpoint is due to be updated/finalized soon, see [discussion in the initial PR](https://github.com/cardano-foundation/CIPs/pull/88#issuecomment-954436243).
-
 This endpoint utilizes the [CIP-0008 signing spec](https://github.com/cardano-foundation/CIPs/blob/master/CIP-0008/CIP-0008.md) for standardization/safety reasons. It allows the dApp to request the user to sign data conforming to said spec. The user's consent should be requested and the details of `sig_structure` shown to them in an informative way. The  Please refer to the CIP-0008 spec for details on how to construct the sig structure.
 
+The return value has the following form:
+```typescript
+type DataSignature = {
+    signature: cbor<COSE_Sign1>,
+    key: cbor<COSE_Key>,
+};
+```
 <CaniuseTable api={Api.SignData}/>
