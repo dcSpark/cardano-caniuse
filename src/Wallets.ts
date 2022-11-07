@@ -3,6 +3,7 @@ import Gero from "./wallets/Gero";
 import Nami from "./wallets/Nami";
 import Cv from "./wallets/Cv";
 import Nufi from "./wallets/Nufi";
+import Begin from "./wallets/Begin";
 
 export const Wallets = [
   Flint,
@@ -10,4 +11,5 @@ export const Wallets = [
   Cv, 
   Gero,
   Nufi,
+  Begin,
 ];
