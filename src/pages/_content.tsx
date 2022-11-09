@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import clsx from 'clsx';
 import Head from '@docusaurus/Head';
 import styles from './index.module.css';
@@ -26,20 +26,18 @@ function HomepageHeader() {
 
 export default function ThemeContainer(props): JSX.Element {
     // Docusaurus Theme
-    let { isDarkTheme } = useColorMode();
-    // Hack to work in production???
-
-    if (useIsBrowser()) {
-        isDarkTheme = localStorage.getItem('theme') !== null ?
-            localStorage.getItem('theme') === 'dark' : isDarkTheme;
-    }
+    let { colorMode } = useColorMode();
 
     // Material UI Theme
-    const reactTheme = React.useMemo(() => createTheme({
-        palette: {
-            mode: isDarkTheme ? 'dark' : 'light',
-        },
-    }), [isDarkTheme]);
+    const reactTheme = useMemo(() => {
+        return createTheme({
+            palette: {
+                mode: colorMode,
+            },
+        });
+    }, [colorMode]);
+
+    console.log(reactTheme);
 
     return (
         <ThemeProvider theme={reactTheme}>
