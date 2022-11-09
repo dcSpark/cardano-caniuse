@@ -37,8 +37,6 @@ export default function ThemeContainer(props): JSX.Element {
         });
     }, [colorMode]);
 
-    console.log(reactTheme);
-
     return (
         <ThemeProvider theme={reactTheme}>
             <Head>
