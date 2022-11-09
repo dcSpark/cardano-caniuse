@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Content from './content';
+import Content from './_content';
 
 export default function Home(): JSX.Element {
   return (
