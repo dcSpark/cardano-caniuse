@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import clsx from 'clsx';
 import Head from '@docusaurus/Head';
 import styles from './index.module.css';
-import useIsBrowser from '@docusaurus/useIsBrowser';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useColorMode } from '@docusaurus/theme-common';
 import { createTheme, Paper, ThemeProvider, useTheme } from '@mui/material';
