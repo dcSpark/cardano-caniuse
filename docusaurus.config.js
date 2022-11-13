@@ -69,7 +69,8 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       colorMode: {
-        defaultMode: 'dark'
+        defaultMode: 'dark',
+        disableSwitch: true
       }
     }),
 };
