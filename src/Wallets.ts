@@ -4,6 +4,7 @@ import Nami from "./wallets/Nami";
 import Eternl from "./wallets/Eternl";
 import Nufi from "./wallets/Nufi";
 import Begin from "./wallets/Begin";
+import Lace from "./wallets/Lace";
 
 export const Wallets = [
   Flint,
@@ -12,4 +13,5 @@ export const Wallets = [
   Gero,
   Nufi,
   Begin,
+  Lace
 ];
