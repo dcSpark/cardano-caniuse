@@ -14,14 +14,14 @@ export default {
     [Api.GetUtxos]: SupportLevel.Supported,
     [Api.GetBalance]: SupportLevel.Supported,
     [Api.GetUsedAddresses]: SupportLevel.Supported,
-    [Api.GetUnusedAddresses]: SupportLevel.Supported,
+    [Api.GetUnusedAddresses]: SupportLevel.Unsupported,
     [Api.GetChangeAddress]: SupportLevel.Supported,
     [Api.GetRewardAddress]: SupportLevel.Unsupported,
     [Api.GetRewardAddresses]: SupportLevel.Supported,
     [Api.SignTx]: SupportLevel.Supported,
     [Api.SignData]: SupportLevel.Supported,
     [Api.SubmitTx]: SupportLevel.Supported,
-    [Api.GetCollateral]: SupportLevel.Experimental,
+    [Api.GetCollateral]: SupportLevel.Supported,
     [Api.On]: SupportLevel.Unsupported,
     [Api.Off]: SupportLevel.Unsupported
   }
