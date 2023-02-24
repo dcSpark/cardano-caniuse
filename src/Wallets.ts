@@ -5,6 +5,7 @@ import Eternl from "./wallets/Eternl";
 import Nufi from "./wallets/Nufi";
 import Begin from "./wallets/Begin";
 import Lace from "./wallets/Lace";
+import Yoroi from "./wallets/Yoroi";
 
 export const Wallets = [
   Flint,
@@ -13,5 +14,6 @@ export const Wallets = [
   Gero,
   Nufi,
   Begin,
-  Lace
+  Lace,
+  Yoroi
 ];
